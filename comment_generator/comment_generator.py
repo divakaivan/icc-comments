@@ -1,8 +1,7 @@
 
-class CommentGenerator:
-    @staticmethod
-    def generate_comment(text):
-        letter_dict = {
+
+def generate_comment(text):
+    letter_dict = {
         "a": """
     #####
     #   #
@@ -193,9 +192,9 @@ class CommentGenerator:
 
         """
     }
-        text_letters = [letter_dict[i.lower()].splitlines() for i in text]
-        for lines in zip(*text_letters):
-            print('  '.join(x for x in lines))
+    text_letters = [letter_dict[i.lower()].splitlines() for i in text]
+    for lines in zip(*text_letters):
+        print('  '.join(x for x in lines))
 
 
 
