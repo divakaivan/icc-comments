@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='comment_creator',
-     version='0.0.3',
+     version='0.0.4',
      scripts=['./comment_creator/comment_creator.py'] ,
      author="Ivan Ivanov",
      author_email="isivanov98@outlook.com",

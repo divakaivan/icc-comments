@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: comment-creator
-Version: 0.0.3
+Version: 0.0.4
 Summary: A Docker and AWS utility package
 Home-page: https://github.com/divakaivan/icc-comments
 Author: Ivan Ivanov
@@ -10,8 +10,34 @@ Description: # Comment generator
         
         When passed a word, this piece of code transforms the text into a B I G hashtag style word.
         
+        Great for printing little pieces of code when running long pieces of code.
+        
+        Example:
+        
+        ```python
+        from comment_creator import comment_creator
+        
+        comment_creator.generate_comment("dates started")
         
         
+        ```
+        
+        Function can output letters and white space at the moment. Will add numbers.
+         
+         Output:
+         
+         ```python
+                                    
+            ####       #####      #####      #####       ###              ###       #####      #####      #####      #####      #####      #### 
+            ##  #      #   #        #        ##         #                #            #        #   #      ##  #        #        ##         ##  #
+            ##  #      #####        #        ####        ###              ###         #        #####      #####        #        ####       ##  #
+            ##  #      #   #        #        ##             #                #        #        #   #      ## #         #        ##         ##  #
+            ####       #   #        #        #####       ###              ###         #        #   #      ##  #        #        #####      #### 
+                                                                                                                                                       
+        
+        ```
+         
+         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.7
 Classifier: License :: OSI Approved :: MIT License
