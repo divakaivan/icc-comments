@@ -9,5 +9,24 @@ Example:
 ```python
 from comment_creator import comment_creator
 
-comment_creator.generate_comment("running step 2")
+comment_creator.generate_comment("dates started")
+
+
 ```
+
+Function can output letters and white space at the moment. Will add numbers.
+ 
+ Output:
+ 
+ ```python
+                            
+    ####       #####      #####      #####       ###              ###       #####      #####      #####      #####      #####      #### 
+    ##  #      #   #        #        ##         #                #            #        #   #      ##  #        #        ##         ##  #
+    ##  #      #####        #        ####        ###              ###         #        #####      #####        #        ####       ##  #
+    ##  #      #   #        #        ##             #                #        #        #   #      ## #         #        ##         ##  #
+    ####       #   #        #        #####       ###              ###         #        #   #      ##  #        #        #####      #### 
+                                                                                                                                               
+
+```
+ 
+ 
