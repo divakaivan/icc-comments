@@ -1,0 +1,9 @@
+README.md
+setup.py
+./comment_creator/comment_creator.py
+comment_creator/__init__.py
+comment_creator/comment_creator.py
+comment_creator.egg-info/PKG-INFO
+comment_creator.egg-info/SOURCES.txt
+comment_creator.egg-info/dependency_links.txt
+comment_creator.egg-info/top_level.txt
