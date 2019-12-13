@@ -3,9 +3,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-     name='comment_generator',
-     version='0.0.1',
-     scripts=['./comment_generator/comment_generator.py'] ,
+     name='comment_creator',
+     version='0.0.3',
+     scripts=['./comment_creator/comment_creator.py'] ,
      author="Ivan Ivanov",
      author_email="isivanov98@outlook.com",
      description="A Docker and AWS utility package",
