@@ -30,4 +30,9 @@ Function can output letters and white space at the moment. Will add numbers.
                                                                                               
 ```
  
- 
+## Improvement since 0.0.5
+1) Added numbers to the character dictionary
+
+2) You can pass an optional second string argument: "warn"(yellow), "success"(green) or "fail"(red) and the output will be in the respective color. Default color is the default print color statement of your IDE.
+
+

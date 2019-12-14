@@ -1,7 +1,7 @@
 
 
-def generate_comment(text):
-    letter_dict = {
+def generate_comment(text, type_of=None):
+    char_dict = {
         "a": """
 #####
 #   #
@@ -262,11 +262,15 @@ def generate_comment(text):
  ### 
               """
     }
-    text_letters = [letter_dict[i.lower()].splitlines() for i in text]
+    text_letters = [char_dict[i.lower()].splitlines() for i in text]
+    color_dict = {
+        "warn" : "\033[93m",
+        "success" : "\033[0;32m",
+        "fail" : "\033[1;31m",
+        None: ""
+    }
     for lines in zip(*text_letters):
-        print('  '.join(x for x in lines))
+        print(f'{color_dict[type_of]}{"  ".join(x for x in lines)}{color_dict[type_of]}')
 
 
 
-
-generate_comment("0123456789")
