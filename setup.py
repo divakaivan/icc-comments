@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='comment_creator',
-     version='0.0.4',
+     version='0.0.5',
      scripts=['./comment_creator/comment_creator.py'] ,
      author="Ivan Ivanov",
      author_email="isivanov98@outlook.com",
-     description="A Docker and AWS utility package",
+     description="Generate big comment type print statements.",
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/divakaivan/icc-comments",
