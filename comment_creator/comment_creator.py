@@ -179,7 +179,7 @@ def generate_comment(text, type_of=None):
 ##   ###   ##
 ##  ## ##  ##
 ##  ## ##  ##
- ####   ####
+ ####   #### 
               """,
         "x": """
 # # 
@@ -203,11 +203,11 @@ def generate_comment(text, type_of=None):
 #####
               """,
         " ": """
-
-
-
-
-
+  
+  
+  
+  
+  
         """,
         "0" : """
  ### 
@@ -291,4 +291,5 @@ def generate_comment(text, type_of=None):
         print(f'{color_dict[type_of]}{"  ".join(x for x in lines)}{color_dict[type_of]}')
 
 
+generate_comment("abcdefghijklmnopqrstuvwxyz 0123456789")
 

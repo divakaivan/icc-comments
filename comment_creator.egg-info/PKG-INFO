@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: comment-creator
-Version: 0.0.4
-Summary: A Docker and AWS utility package
+Version: 0.0.5
+Summary: Generate big comment type print statements.
 Home-page: https://github.com/divakaivan/icc-comments
 Author: Ivan Ivanov
 Author-email: isivanov98@outlook.com
@@ -15,6 +15,8 @@ Description: # Comment generator
         Example:
         
         ```python
+        # pip install comment-creator
+        
         from comment_creator import comment_creator
         
         comment_creator.generate_comment("dates started")
@@ -26,18 +28,23 @@ Description: # Comment generator
          
          Output:
          
-         ```python
+         ```python                                                                                                                        
                                     
-            ####       #####      #####      #####       ###              ###       #####      #####      #####      #####      #####      #### 
-            ##  #      #   #        #        ##         #                #            #        #   #      ##  #        #        ##         ##  #
-            ##  #      #####        #        ####        ###              ###         #        #####      #####        #        ####       ##  #
-            ##  #      #   #        #        ##             #                #        #        #   #      ## #         #        ##         ##  #
-            ####       #   #        #        #####       ###              ###         #        #   #      ##  #        #        #####      #### 
-                                                                                                                                                       
-        
+        ####   #####  #####  #####   ###          ###   #####  #####  #####  #####  #####  #### 
+        ##  #  #   #    #    ##     #            #        #    #   #  ##  #    #    ##     ##  #
+        ##  #  #####    #    ####    ###          ###     #    #####  #####    #    ####   ##  #
+        ##  #  #   #    #    ##         #            #    #    #   #  ## #     #    ##     ##  #
+        ####   #   #    #    #####   ###          ###     #    #   #  ##  #    #    #####  #### 
+                                                                                                      
         ```
          
-         
+        ## Improvement since 0.0.5
+        1) Added numbers to the character dictionary
+        
+        2) You can pass an optional second string argument: "warn"(yellow), "success"(green) or "fail"(red) and the output will be in the respective color. Default color is the default print color statement of your IDE.
+        
+        
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.7
 Classifier: License :: OSI Approved :: MIT License
