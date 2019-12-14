@@ -7,6 +7,8 @@ Great for printing little pieces of code when running long pieces of code.
 Example:
 
 ```python
+# pip install comment-creator
+
 from comment_creator import comment_creator
 
 comment_creator.generate_comment("dates started")
