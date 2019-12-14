@@ -19,6 +19,17 @@
 # SOFTWARE.
 
 def generate_comment(text, type_of=None):
+    """
+    Generate big hash-tag statements. Very good for eye-catching success/warning/fail messages.
+    Or just to generate a BIG has-tag comment to easily distinguish code in thousands lines of code.
+
+    Args:
+        text: str: String of the text you want to get generated.
+        type_of: str: Color of the the printed statement. Default is None, which is the default print color of your IDE.
+
+    Returns:
+        Hash-tag created text.
+    """
     char_dict = {
         "a": """
 #####
