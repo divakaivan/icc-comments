@@ -291,7 +291,14 @@ def generate_comment(text, type_of=None):
  ### 
               """
     }
-    text_letters = [char_dict[i.lower()].splitlines() for i in text]
+
+    text_letters = []
+    for char in text:
+        if char not in char_dict.keys():
+            raise KeyError(f'{char} character is not supported!')
+        else:
+            text_letters.append(char_dict[char.lower()].splitlines())
+
     color_dict = {
         "warn" : "\033[93m",
         "success" : "\033[0;32m",
@@ -302,5 +309,4 @@ def generate_comment(text, type_of=None):
         print(f'{color_dict[type_of]}{"  ".join(x for x in lines)}{color_dict[type_of]}')
 
 
-generate_comment("abcdefghijklmnopqrstuvwxyz 0123456789")
 
