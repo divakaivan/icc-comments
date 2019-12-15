@@ -7,7 +7,7 @@ Great for printing little pieces of code when running long pieces of code.
 Example:
 
 ```python
-# pip install comment-creator
+# pip install comment-creator==0.0.5
 
 from comment_creator import comment_creator
 
